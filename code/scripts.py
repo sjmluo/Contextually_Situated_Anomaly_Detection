@@ -159,7 +159,7 @@ def animate_regime_change(building_seq, filename, num_modes, regime_change_idxs,
     m and L are generally set to be equal, with m = L = 100.
 
     Output: a gif animating the CAC being updated as sensor data comes in.
-    Note: this currently only works for building_seq where building_seq is only of 1 sensor
+    Note: this currently only works for building_seq where building_seq is only of 1 sensor. For multiple sensors, 
     '''
     if num_modes > 0: 
 
@@ -456,18 +456,30 @@ def zero_out(data, length_zero, length_data, num_experiments, zero=True, rand=Tr
     return data, rand_positions
 
 
-def temporal_shift(data, data_length, shift, num_experiments):
+def temporal_shift(data, length_shift, length_data, num_experiments):
     '''Given a pandas dataframe data (e.g. data_dict['Sensor1']), 
     return a dataframe with experiments shifted by :int shift. 
     If shift is a 2-tuple (a,b), randomly choose a value in [a,b] to shift each experiment 
     '''
     shifts = []
     for i in range(num_experiments):
-        if type(shift) == tuple: 
-            shift_val = np.random.randint(shift[0], shift[1])
+        if type(length_shift) == tuple: 
+            shift_val = np.random.randint(length_shift[0], length_shift[1])
         else:
-            shift_val = shift
+            shift_val = length_shift
         shifts.append(shift_val)
-        data.iloc[i,shift_val:data_length] = data.iloc[i,:data_length-shift_val]
+        data.iloc[i,shift_val:length_data] = data.iloc[i,:length_data-shift_val]
         data.iloc[i,:shift_val] = 0 
     return data, shifts
+
+def multisensor(func, sensors, args):
+    '''
+    Inputs: func::function, sensors::list
+    Apply func to a subset of data determined by sensors (a list of integers between 1 and max_sensors). The arguments for the function should be 
+    provided in a tuple or list in args.
+    '''
+    data, length_effect, length_data, num_experiments = args
+
+    for sens in sensors: 
+        sensor_str = f'Sensor{sens}'
+        func(data[sensor_str], length_effect, length_data, num_experiments)
