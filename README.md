@@ -13,8 +13,15 @@ In this repository, we present code and demonstrations of our proposed methodolo
 
 Our methods build on a special data structure called the matrix profile which computes the pairwise maximal distances between subsequences of a given window length. The matrix profile provides a list of "nearest neighbour indices", which is important for _semantic segmentation_. Each nearest neighbour index defines an "arc" (like an arrow) from one data point to another, and for each data point, we can count the number of times an arc crosses above the point.   
 
+<p float="none">
+  <img src="image_assets/arc_curve_pointer_ex.png?raw=true "Title"" width="400" />
+</p>
+
 When the statistical properties of the generating random process changes significantly over a period of time, the number of arcs crossing over points in and around the transition decreases significantly. After dividing by a correction factor (in the baseline random-neighbours scenario, we expect more crossovers for data points in the center than data points on the extremities), we obtain the _Corrected Arc Curve_ (CAC), which "reacts" numerically to perceived regime changes.
 
+<p float="none">
+  <img src="image_assets/noisy_cac_single.jpg?raw=true "Title"" width="400" />
+</p>
 
  In this way, the matrix profile gives a very interpretable meaning to the anomalous transitions it detects. Contrast this with the difficult-to-interpret black-box methods popularised by neural learning, which is particularly inapplicable to high-risk operations (such as the ones we consider in this repository) where understanding how a model categorises failure/anomalies is almost as important as the categorisation itself! We refer to https://stumpy.readthedocs.io/en/latest/, in particular Tutorials/Semantic Segmentation, for more details on the theoretical foundations of the matrix profile.
 
