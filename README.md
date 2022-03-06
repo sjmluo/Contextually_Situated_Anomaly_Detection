@@ -41,9 +41,12 @@ $ pip install -r tf_requirements.txt
 Having multiple environments is preferred due to Tensorflow conflicts with other packages especially if you are working on ARM architecture chips (such as the Apple M1s). You can also run the setup.sh scripts located inside the relevant folders.
 
 ## Images 
+The following are images of outputs from our proposed methodology. The red vertical lines denote the true locations of the regime changes. The first two images are from the offline methodology, where a batch of input data is transformed and CACs computed to predict possible anomalous transitions. The last gif is the output from our online methodology: as input data is fed in, the CAC curve updates and "reacts" to an anomalous transition by dipping. After barycentering over the data from all 24 sensors, we see a marked improvement in the smoothness of the anomaly predictor. All possible anomalous transitions are clearly demarcated by our methods.  
 
+Note: we have plotted 1-CAC in the first two images for peak-finder algorithms. Since we do not use a peak-finder algorithm in the online methodology, we use the original CAC.
 <p float="left">
   <img src="image_assets/CAC_responses.jpg?raw=true "Title"" width="700" />
   <img src="image_assets/combined_CAC_24.jpg?raw=true "Title"" width="700" />
   <img src="image_assets/welch-cac-10fps.gif?raw=true "Title"" width="700" /> 
+  <img src="image_assets/smoothed_CAC_anim.gif?raw=true "Title"" width="700 />
 </p>
