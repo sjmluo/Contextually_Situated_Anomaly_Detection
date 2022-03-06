@@ -44,7 +44,7 @@ Having multiple environments is preferred due to Tensorflow conflicts with other
 ## Images 
 
 <p float="left">
-  <img src="image_assets/CAC_responses.jpg?raw=true "Title"" width="200" />
-  <img src="image_assets/combined_CAC_24.jpg?raw=true "Title"" width="200" />
-  <img src="welch-cac-10fps.gif?raw=true "Title"" width="200" />
+  <img src="image_assets/CAC_responses.jpg?raw=true "Title"" width="500" />
+  <img src="image_assets/combined_CAC_24.jpg?raw=true "Title"" width="500" />
+  ![CAC-gif](welch-cac-10fps.gif)
 </p>
