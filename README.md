@@ -46,5 +46,5 @@ Having multiple environments is preferred due to Tensorflow conflicts with other
 <p float="left">
   <img src="image_assets/CAC_responses.jpg?raw=true "Title"" width="700" />
   <img src="image_assets/combined_CAC_24.jpg?raw=true "Title"" width="700" />
-  ![welch-cac-10fps](https://user-images.githubusercontent.com/78423783/156906264-013e8cbf-85c3-48b3-9285-e2a1356717e5.gif)
 </p>
+  ![welch-cac-10fps](https://user-images.githubusercontent.com/78423783/156906264-013e8cbf-85c3-48b3-9285-e2a1356717e5.gif)
