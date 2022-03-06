@@ -47,4 +47,4 @@ Having multiple environments is preferred due to Tensorflow conflicts with other
   <img src="image_assets/CAC_responses.jpg?raw=true "Title"" width="700" />
   <img src="image_assets/combined_CAC_24.jpg?raw=true "Title"" width="700" />
 </p>
-  ![welch-cac-10fps](https://user-images.githubusercontent.com/78423783/156906264-013e8cbf-85c3-48b3-9285-e2a1356717e5.gif)
+  ![welch-cac-10fps](https://github.com/sjmluo/Contextually_Situated_Anomaly_Detection/blob/main/image_assets/welch-cac-10fps.gif)
