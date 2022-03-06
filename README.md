@@ -33,13 +33,12 @@ For the end-to-end notebooks (offline and online), run
 $ cd requirements
 $ pip install -r end2end-requirements.txt
 ```
-
 For the benchmark models, preferably in a separate virtual environment, run 
 ```
 $ cd requirements
 $ pip install -r tf_requirements.txt
 ```
-Having multiple environments is preferred due to Tensorflow conflicts with other packages especially if you are working on ARM architecture chips (such as the Apple M1s).
+Having multiple environments is preferred due to Tensorflow conflicts with other packages especially if you are working on ARM architecture chips (such as the Apple M1s). You can also run the setup.sh scripts located inside the relevant folders.
 
 ## Images 
 
