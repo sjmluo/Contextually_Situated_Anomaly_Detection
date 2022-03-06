@@ -17,3 +17,4 @@ For the benchmark notebooks 1DConv_bookshelf_heli, Bookshelf_Benchmarks and Book
 pip install -r tf_requirements.txt
 '''
 
+Note: for ease of use, we have also included a setup.sh script.
