@@ -2,3 +2,6 @@ data/
 datasets/data/
 .DS_Store
 
+notebook_demonstrations/streaming/intro_streaming_bookshelf.ipynb
+notebook_demonstrations/streaming/.ipynb_checkpoints/intro_streaming_bookshelf-checkpoint.ipynb
+notebook_demonstrations/streaming/intro_streaming_bookshelf.ipynb
