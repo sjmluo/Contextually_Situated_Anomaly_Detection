@@ -57,8 +57,9 @@ The following are images of outputs from our proposed methodology. The red verti
 
 Note: we have plotted 1-CAC in the first two images for peak-finder algorithms. Since we do not use a peak-finder algorithm in the online methodology, we use the original CAC.
 <p float="left">
+  <img src="image_assets/CAC_responses.jpg?raw=true "Title"" width="700" />
   <img src="image_assets/combined_CAC_24.jpg?raw=true "Title"" width="700" />
-  <img src="image_assets/welch-cac-10fps.gif?raw=true "Title"" width="500" /> 
+  <img src="image_assets/welch-cac-10fps.gif?raw=true "Title"" width="700" /> 
 </p>
 
 <p float="left>
