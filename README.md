@@ -60,4 +60,5 @@ Note: we have plotted 1-CAC in the first two images for peak-finder algorithms. 
   <img src="image_assets/CAC_responses.jpg?raw=true "Title"" width="700" />
   <img src="image_assets/combined_CAC_24.jpg?raw=true "Title"" width="700" />
   <img src="image_assets/welch-cac-10fps.gif?raw=true "Title"" width="700" /> 
+  <img src="image_assets/smoothed_CAC_anim.gif?raw=true "Title"" width="700 />
 </p>
